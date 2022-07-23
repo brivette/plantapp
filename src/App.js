@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import axios from "axios";
+import './App.scss';
+
+import Navbar from './Components/Navbar';
+import PlantList from './Components/PlantList'
+import WateringList from './Components/WateringList'
+import Topbar from './Components/Topbar';
+import { render } from '@testing-library/react';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  return(
+    <div>
+    <Navbar />
+    <PlantList />
+    <WateringList />
     </div>
-  );
+  )
 }
 
 export default App;

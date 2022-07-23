@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:ital,wght@0,100;0,200;1,300;0,400&family=Open+Sans:wght@300&display=swap');
+
+$main-color: #333;
+
+$first-font: 'Lato', sans-serif;
+$second-font: 'Open Sans', sans-serif;
+
+$box2: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+$box: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+
+$fern-green: rgba(107, 123, 80, 1);
+$desert-sand: rgba(230, 204, 186, 1);
+$grullo: rgba(159, 142, 124, 1);
+$jet: rgba(48, 49, 49, 1);
+$pale-silver: rgba(191, 182, 173, 1);
+
+body {
+  font-family: $second-font;
+  background-color: #eee;
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  width: 55%;
+  margin: 1rem;
+  border-collapse: collapse;
+
+  td {
+    padding: .25rem;
+  }
+
+  th {
+    text-transform: uppercase;
+    border-bottom: .5px solid $jet;
+    font-family: $first-font; 
+  }
+}
+
+.Navbar {
+  h1 {
+    font-family: $first-font;
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 5%;
+    margin: 0;
+    padding: .5rem;
+    padding-bottom: 0;
+    font-weight: 300;
+  }
+
+  h5 {
+    padding: .5rem;
+    font-weight: 100;
+    font-size: 1.5rem;
+  }
+
+  .login {
+    padding: 1.5rem;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+  }
+    
+  margin: 0;
+  align-items: flex-end;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-top: 0;
+  padding-top: 0;
+  background-color: $fern-green;
+  box-shadow: $box2;
+  height: auto;
+}
+
+.Topbar {
+  hr {
+    color: $jet;
+    width: 80vw;
+  }
+
+  h1 {
+    text-align: center;
+    letter-spacing: .45vh;
+    text-transform: uppercase;
+  }
+}
+

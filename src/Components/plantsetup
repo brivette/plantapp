@@ -1,0 +1,75 @@
+const [plants, setPlants ] = useState([
+    {
+      id: 0,
+      name: "Pothos",
+      location: "Kitchen"
+    },
+    {
+      id: 1,
+      name: "Elephant Ear",
+      location: "Living Room"
+    },
+    {
+      id: 2,
+      name: "Spider Plant 1",
+      location: "Living Room"
+    },
+    {
+      id: 3,
+      name: "Spider Plant 2",
+      location: "Living Room"
+    },
+    {
+      id: 4,
+      name: "Snake Plant",
+      location: "Living Room"
+    },
+    {
+      id: 5,
+      name: "Monstera",
+      location: "Living Room"
+    },
+    {
+      id: 6,
+      name: "Angel Plant",
+      location: "Living Room"
+    },
+    {
+      id: 7,
+      name: "Mass Cane",
+      location: "Bedroom"
+    },s
+    {
+      id: 8,
+      name: "Fig Leaf",
+      location: "Bedroom"
+    },
+    {
+      id: 9,
+      name: "Pothos",
+      location: "Bedroom"
+    },
+    {
+      id: 10,
+      name: "Cactus",
+      location: "Bedroom"
+    },
+    {
+      id: 11,
+      name: "White Bird",
+      location: "Office"
+    },
+    {
+      id: 12,
+      name: "Aloe",
+      location: "Living Room"
+    }
+  ]);
+
+  {plants && plants.map(({ id, name, location }) => (
+    <table className="table">
+    <tr key={plant.id}>
+      <td>{plant.id}</td>
+      <td>{plant.name}</td>
+    </tr>
+  </table>))
